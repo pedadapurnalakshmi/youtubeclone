@@ -1,2 +1,2 @@
 # youtube clone
-youtube clone usinh html5, css, js
+A fully functional YouTube Clone web application built with modern web technologies. This project replicates core YouTube features like video browsing, searching, video playback, and user interaction with a clean, responsive interface.
