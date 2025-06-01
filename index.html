@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>YouTube Clone</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <div class="logo">📺 YouTube</div>
+    <div class="search-bar">
+      <input type="text" placeholder="Search" />
+      <button>🔍</button>
+    </div>
+    <div class="icons">🔔 👤</div>
+  </header>
+
+  <div class="container">
+    <aside>
+      <ul>
+        <li>🏠 Home</li>
+        <li>🔥 Trending</li>
+        <li>📚 Subscriptions</li>
+      </ul>
+    </aside>
+
+    <main>
+      <div class="videos" id="videoList"></div>
+    </main>
+  </div>
+
+  <!-- Video Player Modal -->
+  <div class="video-modal" id="videoModal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">✖</span>
+      <iframe id="player" width="100%" height="400" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <div class="modal-footer">
+        <span id="videoTitle"></span>
+        <button id="likeBtn">❤️ Like (<span id="likeCount">0</span>)</button>
+      </div>
+    </div>
+  </div>
+<aside>
+  <ul>
+    <li id="homeBtn">🏠 Home</li>
+    <li id="trendingBtn">🔥 Trending</li>
+    <li id="subscriptionsBtn">📚 Subscriptions</li>
+  </ul>
+</aside>
+
+<div class="icons">
+  <span id="bellBtn">🔔</span>
+  <span>👤</span>
+</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
